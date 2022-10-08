@@ -1,0 +1,88 @@
+<!--Skylar Baumgartner-->
+<!--Declares to the browser this is an HTML document.-->
+<!DOCTYPE html>
+<!--Start the HTML page and sets the lang to English-->
+<html lang="en">
+<!--Head tag is used to include the meta tags 
+    and links to the javaScript code page.-->
+    <head>
+        <!--Title of the tab at the top of the page-->
+        <title>Space Casino</title>
+        <!--Add a space background-->
+        <!--CSS information here-->
+    <style>
+        /*CSS code here*/
+        body { /*Opening scope operator- this means that the code is starting up*/
+            /*This is the background image, its pulling from the folder the image you selected for the background of the entire page*/
+            background-image: url("space.jpg");
+            /*this is the repeat, sometimes an image is too small and will repeat until the whole page is filled. this allowes for the image to automatically fill the page.*/
+            background-repeat: no-repeat;
+            /*you can set this so that the image will move with you through the page when you scroll. we have it set to fixed so it doesnt follow. */
+            background-attachment: fixed;
+            /*This is the color of the words that will be applied to the page*/
+            color: white;
+            /*this is what you use to center the text to the middle of the page for a more clean look. you would use left, or right if you wanted it there instead.*/
+            text-align: center;
+        } /*closing scope operator- this means its closing that piece of code and opening up the space for new code*/
+        /*This is the first header and the alignment, along with the font sixe, so how itll appear on the screen*/
+        h1 {/*Opening scope operator- this means that the code is starting up*/
+            /*this is what you use to center the text to the middle of the page for a more clean look. you would use left, or right if you wanted it there instead.*/
+            text-align: center;
+            /*this is the size of the font you would like, it displays it on the page with this size.*/
+            font-size: 75px;
+        }/*closing scope operator- this means its closing that piece of code and opening up the space for new code*/
+        /*This is the second header and the alignment, along with the font sixe, so how itll appear on the screen*/
+        h2 {/*Opening scope operator- this means that the code is starting up*/
+            /*this is what you use to center the text to the middle of the page for a more clean look. you would use left, or right if you wanted it there instead.*/
+            text-align: center;
+            /*this is the size of the font you would like, it displays it on the page with this size.*/
+            font-size: 50px;
+        }/*closing scope operator- this means its closing that piece of code and opening up the space for new code*/
+        /* this is the paragraph, it sets the text to automatically be smaller than header. */
+        p {/*Opening scope operator- this means that the code is starting up*/
+            /*this is what you use to align the text to the left of the page for a more clean look. you would use center, or right if you wanted it there instead.*/
+            text-align: left;
+            /*this is the size of the font you would like, it displays it on the page with this size.*/
+            font-size: x-large;
+        }/*closing scope operator- this means its closing that piece of code and opening up the space for new code*/
+        /*the # assigns the words to an id, its an easier way to write out an element id*/
+        #theFinalCountdown {/*Opening scope operator- this means that the code is starting up*/
+            /*this is what you use to center the text to the middle of the page for a more clean look. you would use left, or right if you wanted it there instead.*/
+            text-align: center;
+            /*this is the size of the font you would like, it displays it on the page with this size.*/
+            font-size: xx-large;
+        }/*closing scope operator- this means its closing that piece of code and opening up the space for new code*/
+            /*the HTML code starts here with the </style> tag*/
+    </style>        
+        <!--links to the javaScript code page-->
+        <script src="JavaScriptCode.js">      
+        </script> <!--javascript ends-->
+        <!--the HTML head starts here-->
+    </head>
+    <!--Body tag is used to include the background image and 
+        the text for the header of the page.-->
+    <body> <!--Body starts here, Head ends automatically-->
+        <!--this is the first header, so what it says at the top of the page-->
+        <h1>Space Casino</h1>
+        <!--This is right under the first header, but since its second header it has a different font size-->
+        <h2>Where the odds are in your favor</h2>      
+        <!--this is the insert image code, src - source, alt - in case of false, it will put in a different image or text, width & height - size of image. -->
+        <img src="insidecasino.jpg" alt="Inside Casino" width="500" height="333">
+        <!--This is the javascript code being pulled from the #JaveScriptCode.js page-->
+        <script> //JS starts with <script> tag
+            //pulled funtion from JS page to display the "scroll down to land..." sentence
+            displayWelcome();
+            //pulled function from JS page to display the "this is how you play..." instructions
+            displayInstructions();
+            //this is the title for the game right above the die.
+            document.write("Space Game");
+            //3 blanks lines to he page before the function play is called
+            document.write("<br/><br/><br/>");
+            //this is the function to let the numbers randomly generate each time the page refreshes. 
+            play();
+        </script> <!--this is the end of JS-->
+        <!--3 blank lines to the page-->
+        <br/><br/><br/>
+    </body> <!--end of body-->
+
+</html> <!--end of page-->
